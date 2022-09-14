@@ -73,8 +73,8 @@ public class Principal {
           System.out.println("Crear 3 Clubes depostivos");
           
           ClubDeportivo club1 = new ClubDeportivo();
-          club1.setRol("ARH11");
           club1.setNombreClub("Arsenal de Coquimbo");
+          club1.crearCorrelativo();
           club1.setNombreFundador("Juan Mesa");
           club1.setAnioFunda("1990");
           club1.setPais("chile");
@@ -85,8 +85,8 @@ public class Principal {
           System.out.println("Se creo el CLub Deportivo"+ club1.getNombreClub());
           
           ClubDeportivo club2 = new ClubDeportivo();
-          club2.setRol("MCH12");
           club2.setNombreClub("Manquehue City ");
+          club1.crearCorrelativo();
           club2.setNombreFundador("Juan Mesa");
           club2.setAnioFunda("1993");
           club2.setPais("chile");
@@ -97,8 +97,8 @@ public class Principal {
           System.out.println("Se creo el CLub Deportivo"+ club2.getNombreClub());        
           
           ClubDeportivo club3 = new ClubDeportivo();
-          club3.setRol("LCH13");
           club3.setNombreClub("Los Cóndores Unidos");
+          club1.crearCorrelativo();
           club3.setNombreFundador("Juan Mesa");
           club3.setAnioFunda("1995");
           club3.setPais("chile");
@@ -111,9 +111,18 @@ public class Principal {
           
           
             //fecha de inicio de la suscripción, valor de la suscripción, equipos al que se está suscrito y abono total por concepto de pagos, además de un correlativo de la venta
-        
-          Suscripcion s1 = new Suscripcion();
-          s1.setFechaIni("14/09/2022");
+          System.out.println("Ingresar suscripcion: ");
+          
+          Suscripcion sus1 = new Suscripcion();
+          
+          sus1.setFechaIni("14/09/2022");
+          sus1.setValor(10050);
+          sus1.setEquipoSub("ARH11");
+          
+          
+          System.out.println("");
+          
+          
           
         
           
