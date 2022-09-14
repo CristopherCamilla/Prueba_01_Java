@@ -114,10 +114,10 @@ public class Principal {
           System.out.println("Ingresar suscripcion: ");
           
           Suscripcion sus1 = new Suscripcion();
-          
           sus1.setFechaIni("14/09/2022");
           sus1.setValor(10050);
           sus1.setEquipoSub("ARH11");
+          
           
           
           System.out.println("");
