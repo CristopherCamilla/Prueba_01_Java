@@ -96,6 +96,9 @@ public class Usuario {
     }
     }
 
+    
+    
+    
     public String getEmail() {
         return Email;
     }
