@@ -1,9 +1,9 @@
 package atlas.DTO;
-
+import java.util.ArrayList;
 
 // @author Cristopher
 
-public class Suscripcion {
+public class Suscripcion extends Usuario{
     
     //fecha de inicio de la suscripción, valor de la suscripción, equipos al que se está suscrito y abono total por concepto de pagos, además de un correlativo de la venta
     
@@ -12,6 +12,7 @@ public class Suscripcion {
     private String EquipoSub;
     private int AbonoTotal;
     private static int Correlativo;
+    private String Usuario;
 
     
     public Suscripcion() {
@@ -20,6 +21,7 @@ public class Suscripcion {
         this.EquipoSub = "";
         this.AbonoTotal = 0;
         this.Correlativo = 1000;
+        this.Usuario = this.getUsuario();
                
     }
   
@@ -29,6 +31,7 @@ public class Suscripcion {
         this.EquipoSub = EquipoSub;
         this.AbonoTotal = AbonoTotal;
         this.Correlativo = Correlativo;
+
     }
 
     public String getFechaIni() {
@@ -67,15 +70,38 @@ public class Suscripcion {
         this.AbonoTotal = AbonoTotal;
     }
 
-    public int getCorrelativo() {
+    public int getCorrelativo() {       
+        Correlativo = Correlativo +10;
         return Correlativo;
     }
 
-    public void setCorrelativo(int Correlativo) {
+
+            //fecha de inicio de la suscripción, valor de la suscripción, equipos al que se está suscrito y abono total por concepto de pagos, además de un correlativo de la venta
+  
         
-        Correlativo = Correlativo +10;
-        this.Correlativo = Correlativo;
-    }
+
+     //    Suscripcion Susc1 = new Suscripcion();
+         
+        
+
+
+
+    
+        public void suscrivirse(String us,String eq, String fecha,int val,int tot){
+        ArrayList<String> lista = new ArrayList<String>();
+        lista.add(us);
+        lista.add(eq);
+        lista.add(fecha);
+        lista.add(String.valueOf(val));
+        lista.add(String.valueOf(tot));
+        
+         
+            
+            
+            
+        }
+          
+          
     
     
     
